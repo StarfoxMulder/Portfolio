@@ -614,9 +614,10 @@ button {
 	.work {
 		width: 100%;
 	}
-	.auth-image {
+	#myPic {
 		width: 100%;
 		margin-bottom: 20px;
+		clear: both;
 	}
 }
 
@@ -638,7 +639,7 @@ button {
 	.work:nth-child(odd) {
 		float: right;
 	}
-	.auth-image {
+	#myPic {
 		width: 50%;
 	}
 	.sidebar {
@@ -657,9 +658,9 @@ button {
 	main.container {
 		padding-top: 0;
 	}
-	#logo,
+	#name,
 	.work,
-	.auth-image {
+	#myPic {
 		width: 100%;
 	}
 	nav {
