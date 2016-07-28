@@ -3,43 +3,96 @@ html {
 }
 
 body {
-	width: 100%;
-	margin: 0 0 0 0;
+	background-image: url(../images/Pentagon_Merged_3.jpg); 
+	background-size: 4px;
+	font-size: 18px;
+	line-height: 34px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777;
 }
 
-header {
-	height: 90px;
+* {
+	box-sizing: border-box;
+}
+
+/* general */
+
+.container {
 	width: 100%;
-	padding-left: 12.35%;
-	padding-right: -17.53%;
-	background-color: white;
-	border-bottom: solid #cfcfcf 3px;
-	display: flex;
-	justify-content: space-between;
-	display: -ms-flexbox;
-    display: -webkit-flex;
-    flex-wrap: nowrap;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-align-content: stretch;
-    -ms-flex-line-pack: stretch;
+	max-width: 960px;
+	margin: 0 auto;
+	clear: both;
+}
+h1, 
+h2,
+h3,
+p {
+	margin-bottom: 20px;
+}
+p:last-child {
+	margin-bottom: 0;
+}
+h1, h2, h3 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: 700;
+	color: #4aaaa5;
+}
+h1 {
+	font-size: 30px;
+	line-height: 49px;
+	border-bottom: 3px solid #ddd;
+	padding-bottom: 20px;
+}
+h2,
+h3 {
+	font-size: 22px;
+}
+
+/*header*/
+
+#masthead {
+	background: #fff;
+	margin: 0 0 30px;
+	z-index: 99;
+	color: #fff;
+	overflow: auto;
+	border-bottom: 2px solid #ccc;
+	position: fixed;
+	width: 100%;
 }
 
 #name {
-	width: 30.28%;
+	width: 300px;
 	height: 90px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	text-align: center;
 	background-color: #4aaaa5;
-	color: white;
-	font-size: 200%;
-	font-weight: bold;
-	margin-bottom: 0px;
-	position: relative;
-	overflow: hidden; /* Looking forward to covering responsive design */
+	color: #fff;
+	float: left;
+	line-height: 90px;
+	font-size: 25px;
+	font-weight: 700;
+	text-decoration: none;
 }
 
+nav {
+	float: right;
+	margin-top: 25px;
+}
+nav a {
+	color: #999;
+	text-decoration: none;
+	margin-left: 15px;
+	display: inline-block;
+	border-left: 1px solid #efefef;
+	padding-left: 15px;
+	line-height: 18px;
+}
+nav a:first-child {
+	border-left: 0 none;
+}
+
+/*
 #sitePages {
 	width: 20%;
 	height: 50px;
@@ -75,11 +128,12 @@ header {
 	border: 1px dashed green;
 } */
 
+
+/*
 #navBarBorders {
 	border-right: solid #dddddd 2px;
 	border-left: solid #dddddd 2px;
 	text-decoration: none;
-	/* for redundency */
 	text-align: center;
 	display: inline;
 	width: 28%;
@@ -91,7 +145,6 @@ header {
 }
 
 #navBarBorders > a {
-	/* for redundency */
 	text-align: center;
 	display: inline;
 	width: 28%;
@@ -104,7 +157,6 @@ header {
 }
 
 #navBarAbout {
-	/* for redundency */
 	text-align: center;
 	display: inline;
 	width: 28%;
@@ -117,7 +169,6 @@ header {
 }
 
 #navBarContact {
-	/* for redundency */
 	text-align: center;
 	display: inline;
 	width: 28%;
@@ -130,8 +181,7 @@ header {
 }
 
 #sitePages > li:link {
-	text-decoration: none; /* This and the other a.xxx do not seem to be effectual */
-	/* for redundency */
+	text-decoration: none;
 	text-align: center;
 	display: inline;
 	width: 28%;
@@ -144,7 +194,6 @@ header {
 
 #sitePages > li:visited {
 	text-decoration: none;
-	/* for redundency */
 	text-align: center;
 	display: inline;
 	width: 28%;
@@ -159,7 +208,6 @@ header {
 	text-decoration: none;
 	background-color: #4aaaa5;
 	color: white;
-	/* for redundency */
 	text-align: center;
 	display: inline;
 	width: 28%;
@@ -168,6 +216,7 @@ header {
 	font-size: 120%;
 }
 
+*/
 
 /*
 .active {
@@ -176,14 +225,36 @@ header {
 }
 */
 
-#main {
-	width: 100%;
-	background-image: url(../images/Pentagon_Merged_3.jpg); /* May require "" around the relative location */
-	background-size: 4px;
-	display: flex;
-	padding: 2.79% 15.94% 10% 12.35%;
+/*footer*/
+
+footer {
+	background: #666;
+	color: #fff;
+	padding: 30px 0;
+	clear: both;
+	border-top: 8px solid #4aaaa5;
+	color: #ccc;
+	font-size: 12px;
+	text-align: center;
 }
 
+/*main*/
+
+main {
+	padding-top: 130px;
+}
+
+.main-section {
+	background: #fff;
+	padding: 30px;
+	margin: 0 0 40px 0;
+	width: 100%;
+	max-width: 650px;
+	float: left;
+	border: 1px solid #ddd;
+}
+
+/*
 #About {
 	width: 47.81%;
 	border: solid #dddddd 2px;
@@ -200,45 +271,39 @@ header {
 	border-bottom: solid #dddddd 5px;
 }
 
+*/
+
 #myPic {
 	float: left;
 	margin-right: 2%;
 	margin-bottom: 2%;
+	width: 40%;
+	height: 40%;
 }
 
-blockquote {
-	width: 48%;
-	height: 100px;
-	margin: 0;
-	float: right;
-}
+
 
 #beeMovie {
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	color: #777777;
-	font-size: 100%;
-	height: 100px;
+	font-style: italic;
 }
+
 
 #beeMovieT {
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	color: #777777;
-	font-size: 100%;
+	font-style: italic;
 	float: right;
-	clear: right;
-	height: 40px;
+	margin-bottom: 15px;
 }
 
-
+/*
 #Bio-text {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777777;
 	font-size: 145%;
 	float: right;
-	clear: right;
 	width: 50%;
 	margin-top: 110px;
 	margin-bottom: 0px;
+	clear: left;
 }
 
 #Bio-text2 {
@@ -250,6 +315,9 @@ blockquote {
 	width: 100%;
 	margin-top: 0px;
 }
+*/
+
+/*
 
 #Connect {
 	width: 250px;
@@ -269,49 +337,67 @@ blockquote {
 	padding-bottom: 15px;
 }
 
+*/
+
+/*sidebar*/
+
+.sidebar {
+	background: #fff;
+	padding: 30px;
+	width: 100%;
+	max-width: 270px;
+	float: right;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+h3,
+.sidebar h2 {
+	border-bottom: 2px solid #eee;
+	padding-bottom: 20px;
+	margin-bottom: 15px;
+	line-height: 22px;
+}
 #socialImages {
 	text-decoration: none;
 	position: relative;
-	width: 68.56px;
-	height: 80px;
 	color: #dddddd;
 }
 
 /* Discovered through DevTools that this was adding padding from
    'user agent stylesheet' (although this works for Chrome, the
    the 'moz-focus-inner' line was needed for FireFox) */
-ul, menu, dir {
+/*ul, menu, dir {
 	-webkit-padding-start: 0px;
 }
 
 ul, li, a, i::-moz-focus-inner {
 	padding: 0;
     border: 0;
-}
+}*/
 
 .socialIconLI {
 	text-decoration: none;
 	display: inline;
 	width: 68.56px;
-	height: 80px;
+	height: 40px;
 	color: #dddddd;
 }
 
 .socialIconLI:nth-child(2n) {
-	padding: 0 10px 0 10px;
+	padding: 0 25px 0 25px;
 }
 
 .socialIcons {
 	text-decoration: none;
 	display: inline;
-	width: 68.56px;
-	height: 80px;
+	width: 40px;
+	height: 40px;
 	color: #dddddd;
 }
 
 .socialIcons > i{
-	width: 68.56px;
-	height: 80px;
+	width: 40px;
+	height: 40px;
 	text-decoration: none;
 	display: inline;
 	color: #dddddd;
@@ -319,42 +405,62 @@ ul, li, a, i::-moz-focus-inner {
 
 .socialIcons > i:link {
 	text-decoration: none; /* This and the other a.xxx do not seem to be effectual */
-	width: 68.56px;
-	height: 80px;
+	width: 40px;
+	height: 40px;
 	color: #dddddd;
 }
 
 .socialIcons > i:visited {
 	text-decoration: none;
-	width: 68.56px;
-	height: 80px;
+	width: 40px;
+	height: 40px;
 	color: #dddddd;
 }
 
 .socialIcons > i:hover {
 	text-decoration: none;
-	width: 68.56px;
-	height: 80px;
+	width: 40px;
+	height: 40px;
 	color: #4aaaa5;
 }
 
 
-footer {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	height: 60px;
-	width: 100%;
-	border-top: solid #45ada6 5px;
-	clear: both; /* May not be needed */
-	color: #dddddd;
-	background-color: #656565;
-	text-align: center;
-	z-index: 2;
-}
-
 /* --- Contact Page --- */
 
+#contact-form ul {
+	margin-bottom: 20px;
+}
+#contact-form li {
+	margin-bottom: 10px;
+}
+label,
+input[type=text],
+input[type=email],
+textarea {
+	display: block;
+	width: 100%;
+}
+input[type=text],
+input[type=email],
+textarea {
+	height: 35px;
+	border: 1px solid #ddd;
+	padding: 0 10px;
+	font-size: 14px;
+}
+textarea {
+	height: 200px;
+}
+input[type=submit] {
+	background: #4aaaa5;
+	border: 0 none;
+	color: #fff;
+	font-size: 18px;
+	padding: 10px 30px;
+	cursor: pointer;
+}
+
+/*
 #Contact {
 	width: 47.81%;
 	border: solid #dddddd 2px;
@@ -409,15 +515,47 @@ button {
 	color: white;
 }
 
+*/
+
 /* --- Portfolio Page --- */
 
-#Portfolio {
-	width: 47.81%;
-	border: solid #dddddd 2px;
-	background-color: white;
-	padding: 0 2.79% 2.79% 2.79%;
+.work {
+	width: 274px;
+	overflow: auto;
+	position: relative;
+	float: left;
+	margin: 20px 0 25px;
+}
+.work:nth-child(even) {
+	margin-right: 40px;
+}
+.work img {
+	width: 100%;
+	border: 0 none;
+	opacity: .8;
+}
+.work h3 {
+	border-bottom: 0;
+	background: #4aaaa5;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	padding: 15px;
+	width: 100%;
+	bottom: 20px;
+	line-height: 30px;
+	margin-bottom: 0;
+	font-weight: 300;
+}
+.auth-image {
+	width: 200px;
+	height: auto;
+	margin-top: 10px;
+	float: left;
+	margin-right: 25px;
 }
 
+/*
 #PortfolioMe {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #4aaaa5;
@@ -441,8 +579,8 @@ button {
 .linkImage > img {
 	height: 360px;
 	width: 450px;
-	/*height: 145px;
-	width: 195px;*/
+	height: 145px; 
+	width: 195px;
 }
 
 .linkTitle {
@@ -456,4 +594,82 @@ button {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	text-align: center;
 	font-size: 190%;
+}
+
+*/
+
+/*---Media Queries--*/
+
+@media only screen and (max-width: 980px) {
+	.container {
+		padding: 0 20px;
+		max-width: 768px;
+	}
+	main.container {
+		padding-top: 130px;
+	}
+	.main-section {
+		max-width: 420px;
+	}
+	.work {
+		width: 100%;
+	}
+	.auth-image {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.main-section,
+	.sidebar {
+		max-width: 100%;
+	}
+	main {
+		overflow: auto;
+	}
+	.work {
+		width: 47%;
+		margin-bottom: 10px;
+	}
+	.work:nth-child(even){
+		margin-right: 0;
+	} 
+	.work:nth-child(odd) {
+		float: right;
+	}
+	.auth-image {
+		width: 50%;
+	}
+	.sidebar {
+		margin-bottom: 40px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	#masthead {
+		position: static;
+		margin-bottom: 20px;
+	}
+	header .container {
+		padding: 0;
+	}
+	main.container {
+		padding-top: 0;
+	}
+	#logo,
+	.work,
+	.auth-image {
+		width: 100%;
+	}
+	nav {
+		text-align: center;
+		width: 100%;
+		margin: 15px 0;
+	}
+	nav a {
+		width: 30%;
+		padding-left: 0;
+		margin-left: 0;
+	}
 }

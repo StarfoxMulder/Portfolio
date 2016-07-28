@@ -2,43 +2,54 @@
 <html>
 	<head>
 		<title>Charles Jude Prestia</title>
-		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 		<script src="https://use.fontawesome.com/a61d82420f.js"></script>
 		<link rel="stylesheet" type="text/css" href="assets/css/style_2.css">
 	</head>
 	<body>
-		<header>
-			<div id="name">
-				<p>Charles Jude Prestia</p>
+
+		<header id="masthead">
+			<div class="container">
+				<a href="index.html" id="name">Charles Jude Prestia</a>
+				<nav id="sitePages">
+					<a href="index.html" id="navBarAbout">About</a>
+					<a href="portfolio.html" id="navBarBorders">Portfolio</a>
+					<a href="contact.html" id="navBarContact">Contact</a>
+				</nav>
 			</div>
-			<ul id="sitePages">
-				<li ><a href="index.html" id="navBarAbout">About</a></li>
-				<li id="navBarBorders"><a href="portfolio.html">Portfolio</a></li>
-				<li ><a href="contact.html" id="navBarContact">Contact</a></li>
-			</ul>
 		</header>
-		<article id="main">
-			<section id="About">
-				<p id="AboutMe">About Me</p>
+
+		<main class="container">
+
+			<section class="main-section">
+				<h1>About Me</h1>
+
 				<img id="myPic" src="assets/images/FormalWare.jpg">
-				<blockquote><p id="beeMovie">According to all known laws of aviation, there is no way that a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyways. Because bees don't care what humans think is impossible.</p>
+
+				<p id="beeMovie">"According to all known laws of aviation, there is no way that a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyways. Because bees don't care what humans think is impossible."</p>
 				<p id="beeMovieT"><i> - Bee Movie </i></p>
-				</blockquote>
 					<br>
 				<p id="Bio-text">I've never seen Bee Movie, but knowing that a movie exists where Jerry Seinfeld, as a bee, falls in love with a woman who helps him sue the human race for the practice of harvesting honey is inspirational to me.  Everything about it seems implausible - reason forbids it at every turn - yet it was <i>made</i> in our world by people with a solid vision for the product they wanted to bring to the world.</p>
-				<p id="Bio-text2">Creation means something to me.  Delivering on my promise to create value for my friends, family, dogs, clients, and co-workers drives what I do.  Let's build something radical together!
+				<p id="Bio-text2">Creation means something to me.  Delivering on my promise to create value for my friends, family, dogs, clients, and co-workers drives what I do.  Let's build something radical together!</p>
 			</section>
-			<aside id="Connect">
-				<p id="connectWithMe">Connect with Me</p>
+		
+			<section class="sidebar">
+				<div id="connect">
+					<h2>Connect with Me</h2>
+				
 				<ul id="SocialImages">
-					<li class="socialIconLI"><a href="https://github.com/StarfoxMulder" class="socialIcons"><i class="fa fa-github fa-5x" aria-hidden="true"></i></a></li>
-					<li class="socialIconLI"><a href="https://www.linkedin.com/in/charles-prestia-2b156317?trk=hp-identity-name" class="socialIcons"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a></li>
-					<li class="socialIconLI"><a href="http://stackoverflow.com/users/6627907/starfox-mulder" class="socialIcons"><i class="fa fa-stack-overflow fa-5x" aria-hidden="true"></i></a></li>
+					<li class="socialIconLI"><a href="https://github.com/StarfoxMulder" class="socialIcons"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
+					<li class="socialIconLI"><a href="https://www.linkedin.com/in/charles-prestia-2b156317?trk=hp-identity-name" class="socialIcons"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a></li>
+					<li class="socialIconLI"><a href="http://stackoverflow.com/users/6627907/starfox-mulder" class="socialIcons"><i class="fa fa-stack-overflow fa-3x" aria-hidden="true"></i></a></li>
 				</ul>
-			</aside>
-		</article>
+				</div>
+			</section>
+        </main>
+
 		<footer>
-			<p>Copyright 2016 Charles Jude Prestia</p>
+			<div class="container">
+				&copy; Copyright 2016 Charles Jude Prestia
+			</div>
 		</footer>
 	</body>
 </html>
